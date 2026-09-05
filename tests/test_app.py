@@ -12,7 +12,7 @@ def test_health_endpoint():
 
     data = response.json()
 
-    assert data["status"] == "healthy"
+    assert data["status"] == "wrong"
     assert data["application"] == "student-ml-api"
     assert data["version"] == "1.0.0"
 
