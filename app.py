@@ -24,8 +24,10 @@ def health():
     return {
         "status": "healthy",
         "application": APP_NAME,
-        "version": get_version(),
+        "application_version": get_version(),
+        "model_version": "model-1",
     }
+
 
 
 @app.post("/predict")
